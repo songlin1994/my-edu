@@ -74,10 +74,38 @@ def str_demo():
     print(astr[::3])
     # str 类型是 有序的
 
+# 字符串拼接
+def str_demo2():
+    astr = 'test'
+    bstr = 'test2'
+    aint = 200
+
+    cstr = astr + bstr
+    # %s : 占位符
+    print('cster: %s , aint: %s' %(cstr,aint))
+
+    # 转换成 str  后在拼接
+    # str(): 转换为str类型
+    print( cstr+ str(aint))
+
+# 字符串去掉前后空格
+def str_demo3():
+    astr = ' 123  '
+    # 去掉右边 空格
+    rstrip = astr.rstrip()
+    print(rstrip)
+    # 去掉左边空格
+    lstrip = astr.lstrip()
+    print(lstrip)
+    # 去掉左右的空格
+    strip = astr.strip()
+    print(strip)
+
+
 if __name__ == '__main__':
     # int_demo1()
     # int_demo2()
     # float_demo1()
     # int2float()
     # float2int()
-    str_demo()
+    str_demo3()
